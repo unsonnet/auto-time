@@ -1,0 +1,16 @@
+def func (a b c) -> (x y) {
+    x := a + b;
+    y := b + c;
+    z := x * y;
+    while x < z {
+        x := x + y;
+        y := x + 1;
+        if x == y {
+            x := x * x;
+        } else {
+            break;
+        }
+        y := y * y;
+    }
+    y := z;
+}

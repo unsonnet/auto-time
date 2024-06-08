@@ -1,0 +1,44 @@
+def func (a b c) -> (x y) {
+    x := a + 1;
+    y := b + 3;
+    if x == y {
+        a := 4
+    }
+    else {
+        b := 5;
+    }
+    z := 3;
+    while true {
+        x := y;
+        if x == y + 1 {
+            a := 4
+        } else {
+            b := 5;
+        }
+        m := 3;
+        if x == y {
+            x := y;
+        }
+        else {
+            y := 3;
+        }
+        while m < 3 {
+            if x == m {
+                break;
+            }
+            if x == m + 1 {
+                x := m + 1;
+            }
+        }
+        for i in [x .. b+4] {
+            x := x + i;
+            if x == i {
+                break;
+            }
+            else {
+                x := x; break;
+            }
+        }
+        m := 3;
+    }
+}
